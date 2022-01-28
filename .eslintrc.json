@@ -1,0 +1,33 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "@typescript-eslint/naming-convention": "warn",
+        "curly": "warn",
+        "no-throw-literal": "warn",
+        "no-console": 2,
+        "semi": ["error", "always"],
+        "eol-last": ["error", "always"],
+        "no-trailing-spaces": ["error", { "skipBlankLines": true, "ignoreComments": true }],
+        "eqeqeq": ["error", "always"],
+        "no-extra-semi": "error",
+        "explicit-function-return-type": 0,
+        "camelcase": 0,
+        "react-hooks/exhaustive-deps": 0,
+        "@typescript-eslint/consistent-type-imports": 2,
+        "@typescript-eslint/ban-types": 2,
+        "@typescript-eslint/no-explicit-any": 2
+    },
+    "ignorePatterns": [
+        "out",
+        "dist",
+        "**/*.d.ts"
+    ]
+}
